@@ -28,5 +28,5 @@ user.welcomeMessage();
 // }
 // console.log(addTwo(3,4));
 const addTwo=(num1,num2)=>num1+num2   //implicit arrow function
-//curly braxes rap kra to return key word likhna pdega
+//curly braces rap kra to return key word likhna pdega
 //explixit return would be used when we define retrun statement explicitly
