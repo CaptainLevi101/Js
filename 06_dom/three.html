@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+
+    </style>
+</head>
+<!-- can i add a list item -->
+
+<body style="background-color: #212121; color:white">
+   <ul class="language">
+    <li>Javascript</li>
+   </ul> 
+</body>
+<script>
+    function addLangName(langName){
+        const li=document.createElement('li');
+        li.innerHTML=`${langName}`;
+        document.querySelector('.language').appendChild(li)
+    }
+    addLangName("python");
+    addLangName("TypeScript")
+
+ //what is problem with this then do you  have any idea
+ //now it is a matter of concern
+ function addOptiLang(langName){
+    const li=document.createElement('li');
+    li.appendChild(document.createTextNode(langName))
+    document.querySelector('.language').appendChild(li)
+ }
+ addOptiLang("JS");
+ addOptiLang("Hindi");
+
+ //++++++++++how to edit the value in js+++++++++++++//
+
+ const secondLang=document.querySelector("li:nth-child(2)");
+ const newLi=document.createElement('li');
+ newLi.textContent="Mojo";
+ secondLang.replaceWith(newLi);
+
+
+ ///remove++++++++++++++++++++++++++/
+ //.remove()  this is how it can be done with
+ //this is all about DOM
+ 
+    </script>
+
+
+
+</html>
