@@ -32,4 +32,21 @@ form.addEventListener('submit', function (e) {
 });
 
 ## project3
+const clock = document.getElementById('clock');
+
+function upDate() {
+  const ne = document.createElement('span');
+  const date = new Date();
+  const hour = date.getHours();
+  const min = date.getMinutes();
+  const seconds = date.getSeconds();
+  clock.innerHTML = `${hour} : ${min} : ${seconds}`;
+}
+
+// upDate(ne);
+
+// Use setInterval to call upDate every second (1000 milliseconds)
+setInterval(upDate, 1000);
+
+## project 4
 
